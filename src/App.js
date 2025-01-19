@@ -1,10 +1,27 @@
-import "./styles.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <Router future={{ v7_startTransition: true }}>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
-}
+};
+
+export default App;
