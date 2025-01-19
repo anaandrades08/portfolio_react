@@ -1,25 +1,53 @@
 {
-  "name": "react",
+  "name": "portfolio_react",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.tsx",
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0",
-    "loader-utils": "3.2.1",
-    "typescript": "5.7.2"
-  },
+  "description": "Meu portfólio desenvolvido em React",
+  "main": "src/index.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3000 && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.28.2",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.97.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anaandrades08/portfolio_react.git"
+  },
+  "keywords": [
+    "react",
+    "portfolio",
+    "web"
+  ],
+  "author": "Ana Andrades",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anaandrades08/portfolio_react/issues"
+  },
+  "homepage": "https://anaandrades08github.io/portfolio_react",
+  "devDependencies": { 
+    "typescript": "^4.0.0", 
+    "@typescript-eslint/parser": "^4.0.0", 
+    "@typescript-eslint/eslint-plugin": "^4.0.0", 
+    "eslint": "^7.0.0" 
+  }
 }

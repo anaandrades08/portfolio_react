@@ -1,0 +1,89 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.banner {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.about-me,
+.projects,
+.contact-cta {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.about-me h2,
+.projects h2,
+.contact-cta h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.about-me p,
+.projects p,
+.contact-cta p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  width: calc(33% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-cta button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-cta button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 2rem);
+  }
+}
