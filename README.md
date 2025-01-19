@@ -1,4 +1,4 @@
 # portfolio_react
-Created with CodeSandbox
-Meu Portfólio utilizando React no front-end, com as páginas home, sobre, projetos e contato.
-Depois irei criar a interação com node.js no back-end para criar uma estrutura dinamica.
+Created with CodeSandbox.
+My Portfolio using React on the front-end, with the home, about, projects and contact pages. 
+Then I will create the interaction with node.js on the back-end to create a dynamic structure.
