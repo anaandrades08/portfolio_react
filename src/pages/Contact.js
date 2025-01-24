@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
+<<<<<<< HEAD
 import emailjs from "emailjs-com";
 
 // Definindo as variáveis de ambiente
@@ -11,6 +12,8 @@ const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 console.log("Service ID:", serviceId);
 console.log("Template ID:", templateId);
 console.log("API Key:", apiKey);
+=======
+>>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,13 +24,20 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+<<<<<<< HEAD
   const [successMessage, setSuccessMessage] = useState("");
+=======
+>>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+<<<<<<< HEAD
     setErrors({ ...errors, [name]: "" });
     setSuccessMessage("");
+=======
+    setErrors({ ...errors, [name]: "" }); // Remove o erro ao alterar o campo
+>>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
   };
 
   const validateForm = () => {
@@ -50,6 +60,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = validateForm();
+<<<<<<< HEAD
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -80,13 +91,24 @@ const Contact = () => {
             });
           }
         );
+=======
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      alert("Formulário enviado com sucesso!");
+      console.log("Dados enviados:", formData);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+>>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
     }
   };
 
   const handleClear = () => {
     setFormData({ name: "", email: "", phone: "", message: "" });
     setErrors({});
+<<<<<<< HEAD
     setSuccessMessage("");
+=======
+>>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
   };
 
   return (
@@ -139,8 +161,11 @@ const Contact = () => {
           </button>
         </div>
       </form>
+<<<<<<< HEAD
       {errors.erroemail && <p className="error">{errors.erroemail}</p>}
       {successMessage && <p className="success">{successMessage}</p>}
+=======
+>>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
     </div>
   );
 };
