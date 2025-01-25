@@ -24,19 +24,6 @@
   font-weight: bold;
   color: #555;
 }
-<<<<<<< HEAD
-.error {
-  font-size: small;
-  font-weight: bold;
-  color: #ff0000;
-}
-.success {
-  font-weight: bold;
-  color: #555;
-}
-=======
->>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -45,14 +32,11 @@
   border-radius: 4px;
 }
 
-<<<<<<< HEAD
 .contact-form input:hover,
 .contact-form textarea:hover {
   border: 1px solid #000;
 }
 
-=======
->>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
 .contact-form textarea {
   resize: vertical;
 }

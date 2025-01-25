@@ -9,11 +9,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <Router future={{ v7_startTransition: true }}>
-=======
-    <Router>
->>>>>>> 9fcf6116a067b5f30c93456d310bf88d6babd319
+    <Router future={{ v7_relativeSplatPath: true }}>
       <Header />
       <main>
         <Routes>
