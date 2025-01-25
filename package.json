@@ -55,5 +55,14 @@
     "@typescript-eslint/parser": "^4.0.0",
     "eslint": "^7.0.0",
     "typescript": "^4.0.0"
+<<<<<<< HEAD
+=======
+  "devDependencies": { 
+    "typescript": "^4.0.0", 
+    "@typescript-eslint/parser": "^4.0.0", 
+    "@typescript-eslint/eslint-plugin": "^4.0.0", 
+    "eslint": "^7.0.0" 
+    }
+>>>>>>> 58e2503c620f5d43320510edc63958de19cf141c
   }
 }
