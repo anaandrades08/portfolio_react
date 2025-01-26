@@ -8,9 +8,9 @@ const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 
 // Verificando se as variáveis de ambiente estão carregadas corretamente
-console.log("Service ID:", serviceId);
-console.log("Template ID:", templateId);
-console.log("API Key:", apiKey);
+//console.log("Service ID:", serviceId);
+//console.log("Template ID:", templateId);
+//console.log("API Key:", apiKey);
 
 const Contact = () => {
   const [formData, setFormData] = useState({
