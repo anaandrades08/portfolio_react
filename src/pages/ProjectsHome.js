@@ -1,7 +1,6 @@
-//Projects.js
+//ProjectsHome.js
 import React, { useState, useEffect } from "react";
-import ProjectCard from "../components/ProjectCard.js"; // Importando o componente
-import "../styles/Projects.css";
+import ProjectCard from "../components/ProjectCardHome.js"; // Importando o componente
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -39,14 +38,10 @@ const Projects = () => {
   }
 
   return (
-    <section
-      className="projects-container"
-      role="region"
-      aria-labelledby="projects-container"
-    >
+    <div>
       <ProjectCard projects={projects} />{" "}
       {/* Passando os dados de projetos para o ExibirProjetos */}
-    </section>
+    </div>
   );
 };
 

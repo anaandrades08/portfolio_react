@@ -10,5 +10,6 @@
   },
   "rules": {
     // Suas regras de ESLint personalizadas aqui
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }

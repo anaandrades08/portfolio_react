@@ -1,89 +1,152 @@
+/* home.css */
 .home-container {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   max-width: 1200px;
 }
 
 .banner {
   text-align: center;
-  padding: 2rem;
-  background-color: #f4f4f4;
+  padding: 3rem;
+  background-color: #007bff;
+  color: white;
   border-radius: 8px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0.5rem 0;
-  color: #333;
 }
 
 .banner p {
   font-size: 1.2rem;
-  color: #555;
+  line-height: 1.5;
 }
 
-.about-me,
-.projects,
-.contact-cta {
+.about-section,
+.projects-section,
+.contact-section {
   margin: 2rem 0;
   text-align: center;
+  background-color: #f4f4f9;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
-.about-me h2,
-.projects h2,
-.contact-cta h2 {
+.about-section h2,
+.projects-section h2,
+.contact-section h2 {
   font-size: 2rem;
   color: #007bff;
+  margin-bottom: 1.5rem;
 }
 
-.about-me p,
-.projects p,
-.contact-cta p {
+.about-section p,
+.projects-section p,
+.contact-section p {
   font-size: 1rem;
   color: #444;
+  line-height: 1.6;
 }
 
-.project-gallery {
+.project-section-gallery {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.project-card {
-  background-color: #ffffff;
-  padding: 1rem;
+.project-section-card {
+  background-color: #fff;
+  padding: 1.5rem;
   width: calc(33% - 2rem);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem; /* Espaço entre os cards */
 }
 
-.project-card:hover {
+.project-section-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
-.contact-cta button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
+.project-section-card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.75rem;
+}
+
+.project-section-card p {
   font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.home-container button {
+  background-color: transparent; /* Fundo transparente por padrão */
+  color: #007bff; /* Cor do texto igual ao tom da borda */
+  border: 2px solid #007bff; /* Borda visível */
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* Botões menores */
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Transição suave para cor de fundo, texto e borda */
+  margin-top: 1rem;
 }
 
-.contact-cta button:hover {
-  background-color: #0056b3;
+.home-container button:hover {
+  background-color: #007bff; /* Fundo colorido no hover */
+  color: white; /* Cor do texto fica branca no hover */
+  border-color: #0056b3; /* Borda escurece no hover */
+}
+
+.home-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Sombra de foco mais suave */
+}
+
+.home-container button:active {
+  background-color: #004085;
+  border-color: #004085; /* Cor mais escura quando pressionado */
+  color: white; /* Texto permanece branco */
 }
 
 @media (max-width: 768px) {
-  .project-card {
-    width: calc(100% - 2rem);
+  .project-section-card {
+    width: calc(
+      100% - 2rem
+    ); /* Faz os cards ocuparem toda a largura em telas pequenas */
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .about-section p,
+  .projects-section p,
+  .contact-section p {
+    font-size: 0.9rem;
+  }
+
+  .about-section h2,
+  .projects-section h2,
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-container button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
   }
 }

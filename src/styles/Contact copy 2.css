@@ -1,61 +1,43 @@
 /*Contact.css*/
+
 .contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 900px;
+  max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #f4f4f9;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-.contact-form-container {
-  background-color: #ffffff;
-  width: 90%;
-  max-width: 600px;
-  padding: 1rem 2rem;
-}
-
 .contact-container h2 {
-  text-align: center;
   font-size: 2rem;
+  text-align: center;
   color: #333;
-  border-bottom: 2px solid #007bff; /* Linha azul separando as divs */
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 95%;
 }
 
 .contact-form label {
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
   color: #555;
 }
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-  border: 1.5px solid #007bff;
-  border-radius: 4px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ccc; /* Borda azul destacada */
-  border: 1.5px solid #ccc;
-  border-radius: 2px;
+  border: 1px solid #000;
 }
 
 .contact-form textarea {
@@ -64,38 +46,36 @@
 
 .button-group {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  width: 100%;
+  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 1rem; /* Espaçamento entre os botões */
 }
 
 .button-group button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 1rem;
 }
 
 .button-group button:hover {
   background-color: #0056b3;
 }
 
-.dadosobrigatorios {
-  color: red;
-  display: inline;
-  margin-left: 0.2rem;
+.button-group button[type="button"] {
+  background-color: #007bff;
 }
 
+.button-group button[type="button"]:hover {
+  background-color: #0056b3;
+}
 .error {
-  color: #555;
+  color: red;
   font-weight: bold;
   font-size: small;
 }
-
 .success {
   color: #0056b3;
   font-weight: bold;
@@ -104,12 +84,11 @@
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
   .contact-container {
-    max-width: 100%; /* Ajusta a largura para 90% da tela */
+    max-width: 90%; /* Ajusta a largura para 90% da tela */
     padding: 1.5rem; /* Menor padding em telas pequenas */
-    background-color: #ffffff; /*muda o fundo para branco*/
   }
 
-  .contact-form-container h2 {
+  .contact-container h2 {
     font-size: 1.5rem; /* Tamanho de fonte menor */
   }
 
@@ -128,7 +107,7 @@
   }
 
   .button-group button {
-    width: 100%;
+    width: 100%; /* Faz os botões ocuparem toda a largura */
     padding: 0.6rem 1rem; /* Ajuste no padding para botões */
   }
 }

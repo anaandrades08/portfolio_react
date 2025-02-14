@@ -1,4 +1,4 @@
-/*Contact.css*/
+/* Contact.css */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -13,29 +13,31 @@
 
 .contact-form-container {
   background-color: #ffffff;
-  width: 90%;
+  width: 100%;
   max-width: 600px;
-  padding: 1rem 2rem;
 }
 
-.contact-container h2 {
+.contact-form-container h2 {
   text-align: center;
-  font-size: 2rem;
   color: #333;
-  border-bottom: 2px solid #007bff; /* Linha azul separando as divs */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #007bff;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 95%;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .contact-form label {
   font-weight: bold;
   color: #555;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -47,15 +49,7 @@
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-  border: 1.5px solid #007bff;
-  border-radius: 4px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ccc; /* Borda azul destacada */
-  border: 1.5px solid #ccc;
-  border-radius: 2px;
+  border-color: #007bff;
 }
 
 .contact-form textarea {
@@ -101,34 +95,77 @@
   font-weight: bold;
 }
 
-/* Ajustes para dispositivos móveis */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
   .contact-container {
-    max-width: 100%; /* Ajusta a largura para 90% da tela */
-    padding: 1.5rem; /* Menor padding em telas pequenas */
-    background-color: #ffffff; /*muda o fundo para branco*/
+    width: 90%;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  .contact-form-container {
+    width: 90%;
+    padding: 1rem;
+    border-radius: none;
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
   }
 
   .contact-form-container h2 {
-    font-size: 1.5rem; /* Tamanho de fonte menor */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .contact-form label {
-    font-size: 0.9rem; /* Ajusta o tamanho da fonte do label */
+    font-size: 0.9rem;
   }
 
   .contact-form input,
   .contact-form textarea {
-    padding: 0.4rem; /* Reduz padding para inputs e textarea */
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
   }
 
   .button-group {
-    flex-direction: column; /* Alinha os botões na vertical */
-    gap: 0.5rem; /* Menor espaçamento entre os botões */
+    width: 90%;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .button-group button {
     width: 100%;
-    padding: 0.6rem 1rem; /* Ajuste no padding para botões */
+    max-width: 100%;
+    padding: 0.8rem;
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares menores) */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-form-container {
+    padding: 0.8rem;
+  }
+
+  .contact-form-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .button-group button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 }
